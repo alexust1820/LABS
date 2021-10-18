@@ -1,1 +1,1 @@
-[LABS](https://alexust1820.github.io/labs/) 
+[LABS](https://alexust1820.github.io/LABS/) 
