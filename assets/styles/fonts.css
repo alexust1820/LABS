@@ -1,0 +1,14 @@
+@font-face {
+	font-family: "Poppins-title";
+	src: url("../fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+	font-family: "Poppins-text";
+	src: url("../fonts/Poppins-ExtraLight.ttf");
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("../fonts/Montserrat-Medium.ttf");
+}

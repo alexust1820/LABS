@@ -1,0 +1,132 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 67px 0 120px 0;
+    position: relative;
+}
+
+.header__menu {
+    position: absolute;
+    top: 50px;
+    height: calc(100vh - 90px);
+    width: 1160px;
+    background-color: var(--black);
+    z-index: 10;
+}
+
+.header__menu.-hidden {
+    display: none;
+}
+
+.header__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.header__contacts {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+}
+
+.header__contacts-text {
+    color: var(--gray);
+    margin-top: 16px;
+}
+
+.logo {
+    position: relative;
+    margin: 0 0 0 40px;
+    font-size: 20px;
+}
+
+.logo::after {
+    content: "SF";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--white);
+    left: -42px;
+    top: -27%; 
+}
+
+.header__burger::after {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 2px;
+    background-color: var(--white);
+    right: 0px;
+    top: 0px;
+    transition: 0.2s;
+}
+
+.header__burger {
+    position: relative;
+    height: 10px;
+    width: 48px;
+}
+
+.header__burger::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: var(--white);
+    right: 0px;
+    bottom: 0px;
+    transition: 0.2s;
+}
+
+.header__burger.-active::before {
+    transform: rotate(45deg);
+    width: 40px;
+    right: 0px;
+    top: 0px;
+    transition: 0.2s;
+}
+
+.header__burger.-active::after {
+    transform: rotate(-45deg);
+    width: 40px;
+    right: 0px;
+    top: 0px;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 1226px) {
+    .header__menu {
+        align-items: flex-start;
+        width: calc(100% + 24px);
+        justify-content: normal;
+    }
+
+    .header__links {
+        align-items: normal;
+        justify-content: normal;
+        margin-top: 100px;
+    }
+
+    .header__contacts {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        margin: 40px 0 100px 0;
+    }
+}
+
+@media screen and (max-height: 615px) {
+    .header__links {
+        margin-top: 50px;
+    }
+}
