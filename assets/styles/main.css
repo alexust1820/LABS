@@ -3,6 +3,10 @@ body, html, h1, h2, h3, h4, h5, h6, p, div, img, span, a, button {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -26,4 +30,24 @@ a {
     background: none;
     color: var(--white);
     cursor: pointer;
+}
+
+.arrow {
+    background: url("../images/arrow.svg") no-repeat;
+    height: 48px;
+    width: 32px;
+    transition: 0.5s;
+}
+
+.arrow:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 950px) {
+    .arrow {
+        background-size: 15px;
+        width: 15px;
+        height: 22.5px;
+    }
 }

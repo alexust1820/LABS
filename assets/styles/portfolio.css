@@ -5,7 +5,7 @@
 }
 
 .portfolio__masks, .portfolio__cat {
-	position:relative;
+	position: relative;
 	width: 100%;
 	height: 560px;
 	border: 1px solid var(--white);
@@ -15,52 +15,33 @@
 	align-items: center;
 }
 
+.masks-title, .cat-title {
+	transition: 0.5s;
+	margin-bottom: 24px;
+}
+
+.portfolio__masks:hover .masks-title {
+	transition: 0.5s;
+	background: var(--gradient);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
 .portfolio__masks__left {
 	display: flex;
 	flex-direction: column;
 }
 
-.masks-title, .cat-title {
-	margin-bottom: 24px;
-}
+
 
 .masks-text, .cat-text {
 	max-width: 360px;
 	margin-bottom: 48px;
 }
 
-.portfolio__arrow::before {
-	content: "";
-	width: 24px;
-	height: 2.5px;
-	position: absolute;
-	background-color: var(--white);
-	border-radius: 10px;
-	bottom: 8px;
-	right: -19px;
-	transform: rotate(-45deg);
-}
-
-.portfolio__arrow {
-	position: relative;
-	width: 2.5px;
-	height: 48px;
-	background-color: var(--white);
-	border-radius: 10px;
-	transform: rotate(-90deg);
-	margin-left: 24px;
-}
-
-.portfolio__arrow::after {
-	content: "";
-	width: 24px;
-	height: 2.5px;
-	position: absolute;
-	background-color: var(--white);
-	border-radius: 10px;
-	bottom: 8px;
-	right: -2.5px;
-	transform: rotate(45deg);
+.mask__arrow {
+	transform: rotateZ(-90deg);
+	margin-left: 9px;
 }
 
 .portfolio__masks__right {
@@ -71,12 +52,32 @@
 }
 
 .portfolio__masks-img.-mini {
-	width: 207px;
-	margin-bottom: 6px;
+	transition: 0.5s;
+	background-image: url("../images/mini-mask.png");
+	background-size: 206px;
+	background-repeat: no-repeat;
+	width: 206px;
+	height: 120px;
+	margin-bottom: 20px;
+}
+
+.portfolio__masks:hover .portfolio__masks-img.-mini {
+	transition: 0.5s;
+	background-image: url("../images/mini-mask-color.png");
 }
 
 .portfolio__masks-img.-big {
+	transition: 0.5s;
+	background-repeat: no-repeat;
+	background-image: url("../images/big-mask.png");
+	background-size: 334px;
 	width: 334px;
+	height: 175px;
+}
+
+.portfolio__masks:hover .portfolio__masks-img.-big {
+	transition: 0.5s;
+	background-image: url("../images/big-mask-color.png");
 }
 
 .portfolio__cat {
@@ -84,22 +85,45 @@
 }
 
 .portfolio__cat-img {
+	transition: 0.5s;
 	background-image: url(../images/cat.png);
-	background-size: 280px;
-	width: 280px;
-	height: 385px;
+	background-size: 300px;
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 395px;
 }
 
-.cat-title.-span {
+.portfolio__cat:hover .portfolio__cat-img {
+	transition: 0.5s;
+	background: url('../images/cat-color.png');
+	background-size: 295px;
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 395px;
+}
+
+.portfolio__cat:hover .cat-title.-span {
 	color: var(--pink);
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 950px) {
 	.portfolio-title {
 		margin-bottom: 60px;
 	}
+	.portfolio__masks-img.-mini {
+		background-size: 124px;
+		width: 124px;
+		height: 75px;
+	}
+
+	.portfolio__masks-img.-big {
+		background-size: 200px;
+		width: 200px;
+		height: 105px;
+	}
 
 	.portfolio__masks, .portfolio__cat {
+		position: relative;
 		flex-direction: column;
 		padding: 24px 24px 38px 24px;
 		height: auto;
@@ -107,58 +131,28 @@
 	}
 
 	.portfolio__cat {
-		flex-direction: column-reverse;	
+		flex-direction: column-reverse;
 		margin-bottom: 120px;
 	}
 
-	.portfolio__arrow {
+	.mask__arrow {
 		position: absolute;
-		right: 48px;
-		height: 22.5px;
-		top: 36px;
-	}
-
-	.portfolio__arrow::before {
-		content: "";
-		right: -10px;
-		bottom: 2.5px;
-	}
-
-	.portfolio__arrow::after {
-		content: "";
-		right: -1.5px;
-		bottom: 2.5px;
-	}
-
-	.portfolio__arrow::before, .portfolio__arrow::after {
-		content: "";
-		width: 14px;
-	}
-
-	.portfolio__masks-img.-big {
-		width: 190px;
-	}
-
-	.portfolio__masks-img.-mini {
-		width: 115px;
-		margin-bottom: 7.5px;
-	}
-
-	.cat-title.-span {
-		color: var(--white);
+		right: 24px;
+		top: 33px;
 	}
 
 	.portfolio__cat-img {
-		background-image: url(../images/cat-mini.png);
-		background-size: 180px;
-		width: 180px;
+		background-size: 170px;
+		width: 170px;
+		height: 220px;
+	}
+
+	.portfolio__cat:hover .portfolio__cat-img {
+		transition: 0.5s;
+		background: url('../images/cat-color.png');
+		background-size: 170px;
+		background-repeat: no-repeat;
+		width: 170px;
 		height: 220px;
 	}
 }
-
-@media screen and (max-width: 768px) {
-	.portfolio__cat {
-		margin-bottom: 120px;
-	}
-}
-

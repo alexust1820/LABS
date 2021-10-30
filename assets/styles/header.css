@@ -27,6 +27,20 @@
     height: 80vh;
 }
 
+.header__link {
+    border-bottom: 1.5px solid transparent;
+    transition: 0.5s;
+}
+
+.header__link.-active {
+    color: var(--gray);
+}
+
+.header__link:hover {
+    transition: 0.5s;
+    border-bottom: 1.5px solid var(--white);
+}
+
 .header__contacts {
     display: none;
     position: absolute;
@@ -39,22 +53,18 @@
 }
 
 .logo {
-    position: relative;
-    margin: 0 0 0 40px;
-    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 127px;
+    font-size: 25px;
 }
 
-.logo::after {
-    content: "SF";
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
+.logo__sf {
+    font-family: "Arial";
+    font-size: 25px;
     border: 2px solid var(--white);
-    left: -42px;
-    top: -27%; 
+    padding: 6px;
 }
 
 .header__burger::after {
@@ -65,12 +75,12 @@
     background-color: var(--white);
     right: 0px;
     top: 0px;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 .header__burger {
     position: relative;
-    height: 10px;
+    height: 15px;
     width: 48px;
 }
 
@@ -82,7 +92,7 @@
     background-color: var(--white);
     right: 0px;
     bottom: 0px;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 .header__burger.-active::before {
@@ -90,7 +100,7 @@
     width: 40px;
     right: 0px;
     top: 0px;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 .header__burger.-active::after {
@@ -98,10 +108,11 @@
     width: 40px;
     right: 0px;
     top: 0px;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 @media screen and (max-width: 1226px) {
+   
     .header__menu {
         align-items: flex-start;
         width: calc(100% + 24px);
@@ -116,6 +127,41 @@
 
     .header__contacts {
         display: block;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    .logo, .logo__sf {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 85px;
+    }
+
+    .header__burger::before {
+        width: 14px;
+    }
+
+    .header__burger::after {
+        width: 24px;
+    }
+
+    .header__burger.-active::before {
+        transform: rotate(45deg);
+        width: 24px;
+        right: 0px;
+        top: 0px;
+        transition: 0.5s;
+    }
+
+    .header__burger.-active::after {
+        transform: rotate(-45deg);
+        width: 24px;
+        right: 0px;
+        top: 0px;
+        transition: 0.5s;
     }
 }
 

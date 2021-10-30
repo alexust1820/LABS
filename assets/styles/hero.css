@@ -11,39 +11,11 @@
     position: relative;
     max-width: 760px;
     margin-left: auto;
+    margin-bottom: 264px;
 }
 
-.hero__arrow::before {
-    content: "";
-    width: 24px;
-    height: 2.5px;
-    position: absolute;
-    background-color: var(--white);
-    border-radius: 10px;
-    bottom: 8px;
-    right: -19px;
-    transform: rotate(-45deg);
-}
-
-.hero__arrow {
-    position: relative;
-    width: 2.5px;
-    height: 48px;
-    background-color: var(--white);
-    margin: 40px 0 264px 16px;
-    border-radius: 10px;
-}
-
-.hero__arrow::after {
-    content: "";
-    width: 24px;
-    height: 2.5px;
-    position: absolute;
-    background-color: var(--white);
-    border-radius: 10px;
-    bottom: 8px;
-    right: -2.5px;
-    transform: rotate(45deg);
+.mission-text {
+    margin-bottom: 40px;
 }
 
 .hero__zinger {
@@ -80,26 +52,6 @@
 }
 
 @media screen and (max-width: 1226px) {
-    .hero-title {
-        margin-bottom: 120px;
-    }
-
-    .hero__arrow {
-        margin-bottom: 150px;
-    }
-
-    .hero__vk {
-        flex-direction: column-reverse;
-        margin-bottom: 124px;
-    }
-
-    .hero__vk-img {
-        margin-bottom: 44px;
-    }
-
-    .vk-text {
-        margin: 0 0 0 auto;
-    }
 
     .vk-text-margin-bottom {
         margin-bottom: 16px;
@@ -107,32 +59,64 @@
 }
 
 @media screen and (max-width: 1100px) {
+
+    .hero__zinger-img {
+        width: 270px;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .hero-title {
+        margin-bottom: 120px;
+    }
+    
+    .hero__mission:before {
+        top: -10px;
+    }
+
+    .hero__mission {
+        max-width: 527px; 
+        margin-bottom: 120px;
+    }
+
+    .hero__zinger {
+        margin-bottom: 54px;
+    }
+
+    .hero__zinger-img {
+        height: 240px;
+        width: 265px;
+        margin-bottom: 35px;
+    }
+
+    .zinger-text {
+        max-width: 327px;
+    }
+
+    .hero__vk {
+        margin-bottom: 120px;
+    }
+
+    .vk-text {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .hero__zinger-img {
+        margin-left: auto;
+    }
+
+    .hero__vk-img {
+        margin-left: auto;
+        margin-bottom: 44px;
+    }
+
     .hero__zinger {
         flex-direction: column;
     }
 
-    .hero__zinger-img {
-        margin-bottom: 70px;
-        margin-left: auto;
-        width: 320px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .hero__arrow {
-        margin-bottom: 107px;
-    }
-
-    .hero__zinger-img {
-        margin-bottom: 35px;
-        width: 282px;
-    }
-
-    .zinger-text {
-        max-width: 317px;
-    }
-
-    .hero__vk-img {
-        width: 190px;
+    .hero__vk {
+        flex-direction: column-reverse;
     }
 }

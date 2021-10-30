@@ -14,6 +14,7 @@
 
 .office-laptop-text {
     max-width: 570px;
+    margin-right: 100px;
 }
 
 .team__office-laptop-img {
@@ -25,11 +26,12 @@
 }
 
 .team__people-unity-img {
-    width: 360px;
+    width: 300px;
+    margin-right: 200px;
 }
 
 .people-unity-text {
-    width: 500px;
+    max-width: 500px;
     margin-bottom: 20px;
 }
 
@@ -47,8 +49,8 @@
         margin-bottom: 60px;
     }
 
-    .team__office-laptop, .team__people-unity {
-        flex-direction: column;
+    .team__office-laptop-img {
+        width: 350px;
     }
 
     .team__people-unity {
@@ -57,6 +59,7 @@
 
     .office-laptop-text {
         margin-bottom: 30px;
+        margin-right: 0px;
     }
 
     .team__people-unity-img {
@@ -64,30 +67,16 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    .team__people-unity {
-        margin-bottom: 120px;
-    }
-
-    .team__office-laptop-img {
-        width: 327px;
+@media screen and (max-width: 950px) {
+    .team__office-laptop, .team__people-unity {
+        flex-direction: column;
     }
 
     .team__people-unity-img {
-        width: 240px;
+        margin-right: 0px;
     }
 
-    
-}
-
-@media screen and (max-width: 556px) {
-    .people-unity-text {
-        max-width: 239px;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .team__office-laptop-img {
-        width: 300px;
+    .team__people-unity {
+        margin-bottom: 120px;
     }
 }

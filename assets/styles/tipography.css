@@ -1,5 +1,5 @@
 .header__link {
-    font-family: "Poppins-title";
+    font-family: "Poppins";
     font-size: 80px;
     font-weight: 400;
     line-height: 80px;
@@ -12,7 +12,7 @@
 }
 
 .title {
-    font-family: "Poppins-title";
+    font-family: "Poppins";
 }
 
 .text {
@@ -20,18 +20,23 @@
 }
 
 .hero-title {
-    font-size: 200px;
+    font-size: 248px;
+    font-style: normal;
     font-weight: 400;
-    line-height: 200px;
+    line-height: 248px;
+    letter-spacing: 0em;
+    text-align: left;
     margin-bottom: 305px;
 }
 
 .hero__mission::before {
-    font-family: "Poppins-text";
+    font-family: "Poppins";
     position: absolute;
     font-size: 20px;
+    font-style: normal;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 28px;
+    letter-spacing: 0em;
 }
 
 .mission-text {
@@ -55,8 +60,7 @@
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
     text-align: left;
 }
 
@@ -72,7 +76,7 @@
 
 .contacts__subtitle {
     text-transform: uppercase;
-    font-size: 20px;
+    font-weight: bolder;
 }
 
 @media screen and (max-width: 1226px) {
@@ -82,66 +86,31 @@
     }
 }
 
-@media screen and (max-width: 1100px) {
-    .hero__zinger {
-        flex-direction: column;
-    }
-
-    .zinger-text {
-        font-size: 30px;
-        line-height: 40px;
-    }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
     .hero-title {
-        font-size: 144px;
-        line-height: 144px;
-    }
-    .mission-text, .masks-title, .cat-title {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 88px;
+        font-weight: 400;
+        line-height: 90px;
     }
 
-    .zinger-text {
-        font-size: 20px;
-        line-height: 28px;
-    }
-
-    .header__link {
-        font-size: 40px;
-        line-height: 40px;
-    }
-
-    .vk-text, .masks-text, .cat-text, .people-unity-text, .team__people-link, .contacts__data {
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    .portfolio-title, .team-title, .contacts-title {
-        font-size: 80px;
-    }
-
-    .office-laptop-text {
-        font-size: 20px;
-        line-height: 28px;
-    }
-
-    .contacts__subtitle {
+    .hero__mission::before {
         font-size: 12px;
         line-height: 12px;
-    }
-}
-
-@media screen and (max-width: 556px) {
-    .hero-title {
-        font-size: 80px;
-        line-height: 82px;
     }
 
     .mission-text {
         font-size: 24px;
         line-height: 32px;
+    }
+
+    .zinger-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .vk-text, .masks-text, .cat-text, .people-unity-text, .team__people-link, .contacts__data, .office-laptop-text {
+        font-size: 16px;
+        line-height: 20px;
     }
 
     .portfolio-title, .team-title, .contacts-title {
@@ -150,6 +119,13 @@
     }
 
     .footer__copyright, .contacts__subtitle {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+    }
+
+    .contacts__subtitle {
         font-size: 12px;
         line-height: 12px;
     }
