@@ -2,35 +2,85 @@
 
 .team-title {
     text-align: center;
-    margin-bottom: 150px; 
+    margin-bottom: 170px;
+    text-align: left;
 }
 
-.team__office-laptop, .team__people-unity {
+.team__office, .team__experts {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     margin-bottom: 150px;
 }
 
-.office-laptop-text {
-    max-width: 570px;
-    margin-right: 100px;
+.team__office {
+    justify-content: space-between;
 }
 
-.team__office-laptop-img {
+.team__experts {
+    justify-content: space-evenly;
+}
+
+.team__office-left {
+    max-width: 560px;
+}
+
+.team-subtitle::before {
+    content: "01";
+    color: var(--gray);
+    position: absolute;
+    top: -17px;
+}
+
+.experts-subtitle::before {
+    content: "02";
+    color: var(--gray);
+    position: absolute;
+    top: -17px;
+}
+
+.team-subtitle, .experts-subtitle {
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.office, .experts {
+    margin-bottom: 20px;
+}
+
+.team-btn {
+    position: relative;
+    transition: 0.5s
+}
+
+.team-btn::after {
+    content: '';
+    position: absolute;
+    height: 1.5px;
+    width: 100%;
+    background-color: var(--white);
+    bottom: -4px;
+    left: 0px;
+}
+
+.team-btn:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.team__office-img {
     width: 500px;
 }
 
-.team__people-unity {
-    margin-bottom: 263px;
+.team__experts {
+    margin-bottom: 260px;
 }
 
-.team__people-unity-img {
+.team__experts-img {
     width: 300px;
     margin-right: 200px;
 }
 
-.people-unity-text {
+.people-experts {
     max-width: 500px;
     margin-bottom: 20px;
 }
@@ -45,15 +95,15 @@
         margin-bottom: 60px;
     }
 
-    .team__office-laptop {
+    .team__office {
         margin-bottom: 60px;
     }
 
-    .team__office-laptop-img {
-        width: 350px;
+    .team__office-img {
+        width: 260px;
     }
 
-    .team__people-unity {
+    .team__experts {
         align-items: flex-end;
     }
 
@@ -62,21 +112,47 @@
         margin-right: 0px;
     }
 
-    .team__people-unity-img {
+    .team__experts-img {
         margin-bottom: 40px;
+        margin-right: 100px;
     }
 }
 
 @media screen and (max-width: 950px) {
-    .team__office-laptop, .team__people-unity {
+    .office, .experts {
+        margin-bottom: 16px;
+    }
+
+    .team-title {
+        text-align: center;
+    }
+
+    .team__office, .team__experts {
         flex-direction: column;
     }
 
-    .team__people-unity-img {
-        margin-right: 0px;
+    .team__office-left {
+        margin: 0 auto 45px 0;
     }
 
-    .team__people-unity {
+    .team__office-img {
+        margin-left: auto;
+    }
+
+    .team__experts-img {
+        margin-right: auto;
+        width: 240px;
+    }
+
+    .team-subtitle, .experts-subtitle{
+        margin-bottom: 16px;
+    }
+
+    .team-subtitle::before, .experts-subtitle::before {
+        top: -15px;
+    }
+
+    .team__experts {
         margin-bottom: 120px;
     }
 }

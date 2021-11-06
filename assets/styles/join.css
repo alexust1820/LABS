@@ -24,6 +24,10 @@
 	border-bottom: 1px solid var(--light-gray);
 }
 
+.first-plan.-noBorder {
+	border: none;
+}
+
 .headline__more::before {
 	content: '';
 	position: absolute;
@@ -53,6 +57,40 @@
 .headline__more.-active {
 	transition: 0.5s;
 	transform: rotate(45deg);
+}
+
+.list {
+	min-height: 100px;
+	transition: 0.5s;
+	display: block;
+	margin: 20px 0;
+}
+
+.list.-hidden {
+	transition: 0.5s;
+	display: none;
+}
+
+.list__link {
+	display: inline-block;
+	margin-bottom: 16px;
+	transition: 0.5s;
+}
+
+.list__link:hover {
+	transition: 0.5s;
+	opacity: 0.5;
+}
+
+.tags {
+	display: flex;
+}
+
+.tag {
+	padding: 8px 16px;
+	border: 1px solid var(--white);
+	border-radius: 20px;
+	margin-right: 16px;
 }
 
 @media screen and (max-width:950px) {

@@ -47,7 +47,7 @@
     bottom: 40px;
 }
 
-.header__contacts-text {
+.header__contact {
     color: var(--gray);
     margin-top: 16px;
 }
@@ -80,14 +80,23 @@
 
 .header__burger {
     position: relative;
-    height: 15px;
+    height: 22px;
     width: 48px;
+}
+
+.header__burger__middle-stick {
+    width: 24px;
+    height: 2px;
+    position: absolute;
+    background-color: var(--white);
+    right: 0px;
+    top: 10px;
 }
 
 .header__burger::before {
     content: "";
     position: absolute;
-    width: 24px;
+    width: 48px;
     height: 2px;
     background-color: var(--white);
     right: 0px;
@@ -101,6 +110,14 @@
     right: 0px;
     top: 0px;
     transition: 0.5s;
+}
+
+.header__burger.-active {
+    height: 15px;
+}
+
+.header__burger.-active > .header__burger__middle-stick {
+    display: none;
 }
 
 .header__burger.-active::after {

@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="windows-1251" />
-    <title></title>
+    <meta charset="UTF-8">
+    <title>LABS - main</title>
     <meta name="viewport" , content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="stylesheet" , href="./assets/styles/main.css" />
     <link rel="stylesheet" , href="./assets/styles/colors.css" />
@@ -24,19 +24,22 @@
             <div class="header">
                 <button class="btn logo">
                     <div class="logo__sf">SF</div>
-                LABS</button>
-                <button class="btn header__burger" onclick="HeaderMenu()"></button>
+                    LABS
+                </button>
+                <button class="btn header__burger" onclick="HeaderMenu()">
+                    <div class="header__burger__middle-stick"></div>
+                </button>
                 <div class="header__menu -hidden">
                     <div class="header__links">
-                        <a href="#about" class="btn header__link" onclick="HeaderMenu()">About</a>
-                        <a href="#portfolio" class="header__link" onclick="HeaderMenu()">Portfolio</a>
-                        <a href="#team" class="header__link" onclick="HeaderMenu()">Team</a>
-                        <a href="./join.html" class="header__link -contacts" onclick="HeaderMenu()">Join</a>
+                        <a href="./index.html" class="btn header__link" onclick="HeaderMenu()">О нас</a>
+                        <a href="#portfolio" class="header__link" onclick="HeaderMenu()">Продукты</a>
+                        <a href="#team" class="header__link" onclick="HeaderMenu()">Команда</a>
+                        <a href="./join.html" class="header__link -contacts" onclick="HeaderMenu()">Карьера</a>
                     </div>
                     <div class="header__contacts">
-                        <p class="header__contacts-text text">Email</p>
+                        <p class="header__contact text">Email</p>
                         <p class="text">Contact@sflabs.org</p>
-                        <p class="header__contacts-text text">Location</p>
+                        <p class="header__contact text">Location</p>
                         <p class="text">Russia, St. Petersburg</p>
                     </div>
                 </div>
@@ -45,36 +48,39 @@
     </header>
     <hero class="hero">
         <div class="container">
-            <h2 class="title hero-title">Start <br /> Fellows</h2>
+            <h2 class="title hero-title">
+                Start
+                <br /> Fellows
+            </h2>
             <div class="hero__mission">
-                <p class="text mission-text">
-                    We are the team of developers united
-                    with the mission to create a global
-                    mobile products with focus on social
+                <p class="text mission">
+                    Добро пожаловать в сообщество <br />
+                    IT-профессионалов, объединенных <br />
+                    идеей развития цифрового общения.
                 </p>
                 <div class="arrow hero__arrow"></div>
             </div>
             <a name="about"></a>
             <div class="hero__zinger">
                 <img class="hero__zinger-img" src="./assets/images/zinger.png">
-                <p class="text zinger-text">
-                    Start Fellows was originally <br />
-                    created as an grant program <br />
-                    for startups started by Pavel <br />
-                    Durov and Yuri Milner
+                <p class="text zinger">
+                    Start Fellows была создана <br />
+                    Павлом Дуровым и Юрием <br />
+                    Мильнером как программа <br />
+                    грантов для стартапов.
                 </p>
             </div>
             <div class="hero__vk">
-                <div class="text vk-text">
-                    <p class="vk-text-margin-bottom">
-                        Later VK kept the initiative <br />
-                        alive by supporting startups <br />
-                        with equity free grants
+                <div class="text vk">
+                    <p class="vk-margin">
+                        Позднее эту инициативу продолжила VK, <br />
+                        поддерживая стартапы грантами.
                     </p>
                     <p>
-                        Now SF works as an laboratory <br />
-                        wich helps founders to bring <br />
-                        their ideas to life
+                        Сегодня SF Labs — независимая <br />
+                        лаборатория, которая помогает <br />
+                        фаундерам воплотить в реальность <br />
+                        идеи в области сервисов для общения
                     </p>
                 </div>
                 <img class="hero__vk-img" src="./assets/images/office.png">
@@ -84,19 +90,19 @@
     <section class="portfolio">
         <a name="portfolio"></a>
         <div class="container">
-            <h2 class="title portfolio-title">Portfolio</h2>
+            <h2 class="title portfolio-title">Наши продукты</h2>
             <div class="portfolio__masks">
                 <div class="portfolio__masks__left">
                     <h4 class="title masks-title">somesay</h4>
-                    <p class="text masks-text">
-                        Start Fellows was originally <br />
-                        created as an grant program <br />
-                        for startups program for
+                    <p class="text masks">
+                        Приложение для обмена <br />
+                        анонимными голосовыми <br />
+                        историями
                     </p>
                     <a href="https://somesay.app" target="_blank">
                         <div class="arrow mask__arrow"></div>
                     </a>
-                    
+
                 </div>
                 <div class="portfolio__masks__right">
                     <div class="portfolio__masks-img -mini"></div>
@@ -106,11 +112,13 @@
             <div class="portfolio__cat">
                 <div class="portfolio__cat-img"></div>
                 <div class="portfolio__cat__left">
-                    <h4 class="title cat-title">Face<span class="cat-title -span">Cat</span></h4>
-                    <p class="text cat-text">
-                        Start Fellows was originally <br />
-                        created as an grant program <br />
-                        for startups program for
+                    <h4 class="title cat-title">
+                        Face
+                        <span class="cat-title -span">Cat</span>
+                    </h4>
+                    <p class="text cat">
+                        Приложение для совместных <br />
+                        игр и общения с друзьями
                     </p>
                     <a href="https://face.cat" target="_blank">
                         <div class="arrow mask__arrow"></div>
@@ -122,42 +130,54 @@
     <section class="team">
         <a name="team"></a>
         <div class="container">
-            <h2 class="title team-title">Join Team</h2>
-            <div class="team__office-laptop">
-                <p class="text office-laptop-text">
-                    Start Fellows was originally <br />
-                    created as an grant program <br />
-                    for startups started by Pavel <br />
-                    Durov and Yuri Milner
-                </p>
-                <img class="team__office-laptop-img" src="./assets/images/office_with_laptop.png" />
-            </div>
-            <div class="team__people-unity">
-                <img class="team__people-unity-img" src="./assets/images/team-unity.png" />
-                <div>
-                    <p class="text people-unity-text">
-                        Now SF works as an laboratory wich <br />
-                        helps founders to bring their ideas <br />
-                        to life aboratory wich helps founders
+            <h2 class="title team-title">
+                Присоединяйтесь <br />
+                к нашей команде
+            </h2>
+            <div class="team__office">
+                <div class="team__office-left">
+                    <h5 class="title team-subtitle">Фаундерам</h5>
+                    <p class="text office">
+                        Придумать идею продукта — легко. <br />
+                        Определить цель, разработать стратегию <br />
+                        и найти финансирование — сложнее. <br />
                     </p>
-                    <a class="text team__people-link" href="#">Join our team</a>
+                    <p class="text office">
+                        Мы поможем: заполните заявку <br />
+                        и расскажите нам о своём проекте <br />
+                    </p>
+                    <button class="btn team-btn">Узнать подробнее</button>
                 </div>
+                <img class="team__office-img" src="./assets/images/founders-img.png" />
+            </div>
+            <div class="team__experts">
+                <img class="team__experts-img" src="./assets/images/experts-img.png" />
+                <div>
+                    <div class="experts-right">
+                        <h5 class="title experts-subtitle">Экспертам</h5>
+                        <p class="text experts">
+                            Ежедневно думаете, как улучшить опыт <br />
+                            общения людей с помощью цифровых <br />
+                            сервисов? Станьте частью нашей команды
+                        </p>
+                        <button class="btn team-btn">Узнать подробнее</button>
+                    </div>
             </div>
         </div>
     </section>
     <section class="contacts">
         <div class="container">
-            <h2 class="title contacts-title">Contacts</h2>
+            <h2 class="title contacts-title">Контакты</h2>
             <div class="contacts__info">
-                <p class="text contacts__subtitle">Email</p>
+                <p class="text contacts__subtitle">E-mail</p>
                 <p class="text contacts__data">Contact@sflabs.org</p>
                 <p class="text contacts__subtitle">Location</p>
                 <div class="text contacts__data">
-                    Russia, St. Petersburg 
+                    Россия, Санкт-Петербург
                     <a href="#top" class="arrow contact-arrow"></a>
                 </div>
             </div>
-            
+
         </div>
     </section>
     <footer class="footer">
@@ -167,7 +187,7 @@
                 LABS
             </button>
             <div class="footer__copyright">
-                <p class="text copyright-text">SF Labs © 2021</p>
+                <p class="text copyright">SF Labs © 2021</p>
                 <a class="text copyright-links" href="#">Privacy Policy</a>
             </div>
         </div>

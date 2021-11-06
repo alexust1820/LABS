@@ -9,6 +9,10 @@
     align-items: center;
 }
 
+.container.-headlines {
+    margin-bottom: 264px;
+}
+
 @media screen and (max-width: 1226px) {
     .container {
         width: calc(100% - 48px);
