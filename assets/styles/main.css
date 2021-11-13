@@ -36,12 +36,12 @@ a {
     background: url("../images/arrow.svg") no-repeat;
     height: 48px;
     width: 32px;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .arrow:hover {
     opacity: 0.5;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 @media screen and (max-width: 950px) {

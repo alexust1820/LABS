@@ -1,3 +1,7 @@
+.join-title {
+	margin-left: 100px;
+}
+
 .join__mission {
 	margin-bottom: 264px;
 	width: 760px;
@@ -10,6 +14,7 @@
 
 .headline {
 	margin-bottom: 10px;
+    background-color: black;
 }
 
 .headline-span {
@@ -22,6 +27,7 @@
 	align-items: center;
 	height: 114px;
 	border-bottom: 1px solid var(--light-gray);
+    z-index: 2;
 }
 
 .first-plan.-noBorder {
@@ -33,12 +39,12 @@
 	position: absolute;
 	width: 40px;
 	height: 2px;
-	left: 0px;
+	left: 1px;
 	background-color: var(--white);
 }
 
 .headline__more {
-	transition: 0.5s;
+	transition: 1s;
 	position: relative;
 	width: 40px;
 	height: 40px;
@@ -50,25 +56,31 @@
 	width: 2px;
 	height: 40px;
 	top: 1px;
-	left: 19px;
+	left: 20px;
 	background-color: var(--white);
 }
 
 .headline__more.-active {
-	transition: 0.5s;
+	transition: 1s;
 	transform: rotate(45deg);
 }
 
 .list {
-	min-height: 100px;
-	transition: 0.5s;
-	display: block;
+    transition: 1s all;
+    height: 100px;
+    width: 100%;
+	overflow: hidden;
 	margin: 20px 0;
 }
 
+.list.-biggerHeight {
+	height: 208px;
+}
+
 .list.-hidden {
-	transition: 0.5s;
-	display: none;
+    transition: 1s all;
+	height: 0;
+    width: 0;
 }
 
 .list__link {
@@ -78,12 +90,14 @@
 }
 
 .list__link:hover {
-	transition: 0.5s;
+	transition: 1s;
 	opacity: 0.5;
 }
 
 .tags {
 	display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 .tag {
@@ -95,6 +109,53 @@
 
 @media screen and (max-width:950px) {
 	.join-title {
-		margin-bottom: 120px;
-	}	
+		margin: 0 0 120px 0;
+	}
+
+	.join__mission {
+		max-width: 327px;
+		margin: 0 0 120px auto;
+	}
+
+	.mission {
+		margin-bottom: 33px;
+	}
+
+	.first-plan {
+		height: 65px;
+	}
+
+	.headline__more::before {
+		width: 24px;
+		left: 1px;
+	}
+
+	.headline__more {
+		width: 24px;
+		height: 24px;
+	}
+
+	.headline__more::after {
+		height: 24px;
+		left: 12px;
+	}
+
+	.tags {
+		margin-bottom: 24px;
+	}
+    
+    .tag {
+        padding: 4px 8px;
+        margin: 0 8px 8px 0;
+    }
+}
+
+@media screen and (max-width: 339px) {
+	.list {
+		height: 120px;
+	}
+
+	.list.-biggerHeight {
+		height: 250px;
+	}
 }

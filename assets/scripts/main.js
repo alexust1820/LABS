@@ -1,14 +1,4 @@
-﻿const teamTitle = document.querySelector('.team-title');
-
-changeTeamTitle();
-
-function changeTeamTitle() {
-    if (document.documentElement.scrollWidth < 950) {
-        teamTitle.innerHTML = `Присоединяйтесь <br/> к команде`;
-    } else {
-        teamTitle.innerHTML = `Присоединяйтесь <br/> к нашей команде`;
-    }
-}
+﻿/*This file belongs to an all html documents*/
 
 function HeaderMenu() {
     document.querySelector(".header__menu").classList.toggle("-hidden");

@@ -32,7 +32,7 @@
                 <div class="header__menu -hidden">
                     <div class="header__links">
                         <a href="./index.html" class="btn header__link" onclick="HeaderMenu()">О нас</a>
-                        <a href="#portfolio" class="header__link" onclick="HeaderMenu()">Продукты</a>
+                        <a href="#portfolio" class="header__link" onclick="HeaderMenu()">Прродукты</a>
                         <a href="#team" class="header__link" onclick="HeaderMenu()">Команда</a>
                         <a href="./join.html" class="header__link -contacts" onclick="HeaderMenu()">Карьера</a>
                     </div>
@@ -54,9 +54,7 @@
             </h2>
             <div class="hero__mission">
                 <p class="text mission">
-                    Добро пожаловать в сообщество <br />
-                    IT-профессионалов, объединенных <br />
-                    идеей развития цифрового общения.
+                    Our team has joined together with the goal to create socially-focused mobile products for the global community.
                 </p>
                 <div class="arrow hero__arrow"></div>
             </div>
@@ -64,23 +62,16 @@
             <div class="hero__zinger">
                 <img class="hero__zinger-img" src="./assets/images/zinger.png">
                 <p class="text zinger">
-                    Start Fellows была создана <br />
-                    Павлом Дуровым и Юрием <br />
-                    Мильнером как программа <br />
-                    грантов для стартапов.
+                    Start Fellows was originally founded by Pavel Durov and Yuri Milner to support startups at the seed stage.
                 </p>
             </div>
             <div class="hero__vk">
                 <div class="text vk">
                     <p class="vk-margin">
-                        Позднее эту инициативу продолжила VK, <br />
-                        поддерживая стартапы грантами.
+                        Later, VK backed the initiative and continued providing startups with equity-free grant funding.
                     </p>
                     <p>
-                        Сегодня SF Labs — независимая <br />
-                        лаборатория, которая помогает <br />
-                        фаундерам воплотить в реальность <br />
-                        идеи в области сервисов для общения
+                        Now SF has been transformed into a lab that helps founders bring their ideas to life.
                     </p>
                 </div>
                 <img class="hero__vk-img" src="./assets/images/office.png">
@@ -91,12 +82,12 @@
         <a name="portfolio"></a>
         <div class="container">
             <h2 class="title portfolio-title">Наши продукты</h2>
-            <div class="portfolio__masks">
+            <div id="somesay" onmouseover="masksActive()" onmouseout="masksPassive()" class="portfolio__masks">
                 <div class="portfolio__masks__left">
-                    <h4 class="title masks-title">somesay</h4>
+                    <h4 id="masks-title" class="title masks-title">somesay</h4>
                     <p class="text masks">
-                        Приложение для обмена <br />
-                        анонимными голосовыми <br />
+                        Приложение для обмена <br>
+                        анонимными голосовыми <br>
                         историями
                     </p>
                     <a href="https://somesay.app" target="_blank">
@@ -105,19 +96,19 @@
 
                 </div>
                 <div class="portfolio__masks__right">
-                    <div class="portfolio__masks-img -mini"></div>
-                    <div class="portfolio__masks-img -big"></div>
+                    <div id="mask-mini" class="portfolio__masks-img -mini"></div>
+                    <div id="mask-big" class="portfolio__masks-img -big"></div>
                 </div>
             </div>
-            <div class="portfolio__cat">
-                <div class="portfolio__cat-img"></div>
+            <div onmouseover="catActive()" onmouseout="catPassive()" class="portfolio__cat">
+                <div id="cat" class="portfolio__cat-img"></div>
                 <div class="portfolio__cat__left">
                     <h4 class="title cat-title">
                         Face
                         <span class="cat-title -span">Cat</span>
                     </h4>
                     <p class="text cat">
-                        Приложение для совместных <br />
+                        Приложение для совместных <br>
                         игр и общения с друзьями
                     </p>
                     <a href="https://face.cat" target="_blank">
@@ -131,20 +122,20 @@
         <a name="team"></a>
         <div class="container">
             <h2 class="title team-title">
-                Присоединяйтесь <br />
+                Присоединяйтесь <br>
                 к нашей команде
             </h2>
             <div class="team__office">
                 <div class="team__office-left">
                     <h5 class="title team-subtitle">Фаундерам</h5>
                     <p class="text office">
-                        Придумать идею продукта — легко. <br />
-                        Определить цель, разработать стратегию <br />
-                        и найти финансирование — сложнее. <br />
+                        Придумать идею продукта — легко. <br>
+                        Определить цель, разработать стратегию <br>
+                        и найти финансирование — сложнее.
                     </p>
                     <p class="text office">
-                        Мы поможем: заполните заявку <br />
-                        и расскажите нам о своём проекте <br />
+                        Мы поможем: заполните заявку <br>
+                        и расскажите нам о своём проекте
                     </p>
                     <button class="btn team-btn">Узнать подробнее</button>
                 </div>
@@ -156,14 +147,14 @@
                     <div class="experts-right">
                         <h5 class="title experts-subtitle">Экспертам</h5>
                         <p class="text experts">
-                            Ежедневно думаете, как улучшить опыт <br />
-                            общения людей с помощью цифровых <br />
+                            Ежедневно думаете, как улучшить опыт <br>
+                            общения людей с помощью цифровых <br>
                             сервисов? Станьте частью нашей команды
                         </p>
                         <button class="btn team-btn">Узнать подробнее</button>
                     </div>
+                </div>
             </div>
-        </div>
     </section>
     <section class="contacts">
         <div class="container">
@@ -193,5 +184,6 @@
         </div>
     </footer>
     <script type="text/javascript" src="./assets/scripts/main.js"></script>
+    <script type="text/javascript" src="./assets/scripts/index.js"></script>
 </body>
 </html>

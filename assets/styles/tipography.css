@@ -96,7 +96,7 @@
     font-weight: bolder;
 }
 
-.headline-title {
+.headline-subtitle {
     font-family: 'Manrope-text';
     font-size: 36px;
     font-weight: 400;
@@ -131,6 +131,11 @@
 }
 
 @media screen and (max-width: 950px) {
+    .header__link {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
     .hero-title, .join-title {
         font-size: 88px;
         font-weight: 400;
@@ -148,11 +153,11 @@
     }
 
     .zinger {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 20px;
+        line-height: 28px;
     }
 
-    .experts-subtitle, .team-subtitle {
+    .experts-subtitle, .team-subtitle, .headline-subtitle {
         font-size: 20px;
         line-height: 20px;
     }
@@ -167,7 +172,12 @@
         line-height: 52px;
     }
 
-    .team-subtitle::before, .experts-subtitle::before {
+    .masks-title, .cat-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .team-subtitle::before, .experts-subtitle::before, .headline-span {
         font-size: 12px;
         font-weight: 500;
         line-height: 14px;
@@ -183,6 +193,16 @@
     .contacts__subtitle {
         font-size: 12px;
         line-height: 12px;
+    }
+    
+    .list__link {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .tag {
+        font-size: 16px;
+        line-height: 20px;
     }
 }
 

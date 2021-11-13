@@ -37,7 +37,7 @@
 }
 
 .header__link:hover {
-    transition: 0.5s;
+    transition: 1s;
     border-bottom: 1.5px solid var(--white);
 }
 
@@ -75,7 +75,7 @@
     background-color: var(--white);
     right: 0px;
     top: 0px;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .header__burger {
@@ -101,7 +101,7 @@
     background-color: var(--white);
     right: 0px;
     bottom: 0px;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .header__burger.-active::before {
@@ -109,7 +109,7 @@
     width: 40px;
     right: 0px;
     top: 0px;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .header__burger.-active {
@@ -125,25 +125,12 @@
     width: 40px;
     right: 0px;
     top: 0px;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 @media screen and (max-width: 1226px) {
-   
-    .header__menu {
-        align-items: flex-start;
+    .header__menu {   
         width: calc(100% + 24px);
-        justify-content: normal;
-    }
-
-    .header__links {
-        align-items: normal;
-        justify-content: normal;
-        margin-top: 100px;
-    }
-
-    .header__contacts {
-        display: block;
     }
 }
 
@@ -157,8 +144,20 @@
         width: 85px;
     }
 
+    .header__links {
+        height: 60vh;
+    }
+
+    .header__contacts {
+        display: block;
+    }
+
     .header__burger::before {
         width: 14px;
+    }
+
+    .header__burger {
+        height: 8px;
     }
 
     .header__burger::after {
@@ -170,7 +169,7 @@
         width: 24px;
         right: 0px;
         top: 0px;
-        transition: 0.5s;
+        transition: 1s;
     }
 
     .header__burger.-active::after {
@@ -178,7 +177,15 @@
         width: 24px;
         right: 0px;
         top: 0px;
-        transition: 0.5s;
+        transition: 1s;
+    }
+
+    .header__burger__middle-stick {
+        display: none;
+    }
+
+    .header__links {
+        align-items: normal;
     }
 }
 

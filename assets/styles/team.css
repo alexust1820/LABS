@@ -137,11 +137,14 @@
 
     .team__office-img {
         margin-left: auto;
+        width: 327px;
+        height: 201px;
     }
 
     .team__experts-img {
         margin-right: auto;
         width: 240px;
+        height: 165px;
     }
 
     .team-subtitle, .experts-subtitle{
