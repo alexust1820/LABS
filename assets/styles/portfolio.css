@@ -22,17 +22,18 @@
 }
 
 .masks-title {
-	transition: background-color 1s;
+	transition: 1s all;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-color: var(--white);
+  background-image: url("../images/somesay-background-white.jpg");
 }
 
 .masks-title.-active {
-	transition: background-color 1s;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(90deg, #FF0642 5.17%, #C626E0 92.24%);
+	transition: 1s all;
+  	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: url("../images/somesay-background-color.jpg");
+	
 }
 
 .portfolio__masks__left {
