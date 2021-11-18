@@ -47,26 +47,6 @@
     margin-bottom: 20px;
 }
 
-.team-btn {
-    position: relative;
-    transition: 0.5s
-}
-
-.team-btn::after {
-    content: '';
-    position: absolute;
-    height: 1.5px;
-    width: 100%;
-    background-color: var(--white);
-    bottom: -4px;
-    left: 0px;
-}
-
-.team-btn:hover {
-    transition: 0.5s;
-    opacity: 0.5;
-}
-
 .team__office-img {
     width: 500px;
 }

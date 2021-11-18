@@ -44,10 +44,32 @@ a {
     transition: 1s;
 }
 
+.tag {
+    padding: 8px 16px;
+    border: 1.5px solid var(--white);
+    border-radius: 20px;
+    margin-right: 16px;
+}
+
+.join-btn {
+    padding: 0 0 4px 0;
+    border-bottom: 1px solid var(--gray);
+    transition: 1s;
+}
+
+.join-btn:hover {
+    opacity: 0.5;
+}
+
 @media screen and (max-width: 950px) {
     .arrow {
         background-size: 15px;
         width: 15px;
         height: 22.5px;
+    }
+
+    .tag {
+        padding: 4px 8px;
+        margin: 0 8px 8px 0;
     }
 }

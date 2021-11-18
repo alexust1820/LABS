@@ -68,7 +68,7 @@
 .list {
     transition: 1s all;
     height: 100px;
-    width: 100%;
+    max-width: 100%;
 	overflow: hidden;
 	margin: 20px 0;
 }
@@ -80,7 +80,7 @@
 .list.-hidden {
     transition: 1s all;
 	height: 0;
-    width: 0;
+    min-width: 0%;
 }
 
 .list__link {
@@ -98,13 +98,6 @@
 	display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
-}
-
-.tag {
-	padding: 8px 16px;
-	border: 1px solid var(--white);
-	border-radius: 20px;
-	margin-right: 16px;
 }
 
 @media screen and (max-width:950px) {
@@ -143,11 +136,6 @@
 	.tags {
 		margin-bottom: 24px;
 	}
-    
-    .tag {
-        padding: 4px 8px;
-        margin: 0 8px 8px 0;
-    }
 }
 
 @media screen and (max-width: 339px) {

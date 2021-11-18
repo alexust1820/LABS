@@ -1,0 +1,264 @@
+.header__link {
+    font-family: "Manrope";
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 80px;
+    margin-bottom: 40px;
+}
+
+.header__contact {
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.title {
+    font-family: "Manrope";
+}
+
+.text {
+    font-family: "Manrope-text";
+}
+
+.hero-title, .join-title {
+    font-size: 248px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 248px;
+}
+
+.hero__mission::before {
+    font-family: "Manrope";
+    position: absolute;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+}
+
+.mission {
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.zinger {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.portfolio-title, .team-title, .contacts-title {
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 110px;
+}
+
+.masks-title, .cat-title {
+    font-family: "Montserrat";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.team-subtitle::before, .experts-subtitle::before {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.team-subtitle, .experts-subtitle {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 400;
+}
+
+.team-btn {
+    font-family: 'Manrope';
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.masks, .cat, .vk, .experts, .team__people-link, .contacts__data, .office {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.team__people-link {
+    font-weight: bold;
+}
+
+.contacts__subtitle {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.headline-subtitle {
+    font-family: 'Manrope-text';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.headline-span {
+    color: var(--gray);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.list__link {
+    font-family: "Manrope";
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.tag {
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.headOfDesign-title {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80px;
+}
+
+.join-btn {
+    font-family: 'Manrope';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.preface {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.paragraphs-title {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 36px;
+}
+
+.paragraphs-text {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 1226px) {
+    .header__link {
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .header__link {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .hero-title, .join-title {
+        font-size: 88px;
+        font-weight: 400;
+        line-height: 90px;
+    }
+
+    .hero__mission::before {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .mission {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .zinger {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .experts-subtitle, .team-subtitle, .headline-subtitle {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .vk, .masks, .cat, .experts, .team__people-link, .contacts__data, .office, .join-btn {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .portfolio-title, .team-title, .contacts-title {
+        font-size: 44px;
+        line-height: 52px;
+    }
+
+    .masks-title, .cat-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .team-subtitle::before, .experts-subtitle::before, .headline-span {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+    }
+
+    .footer__copyright, .contacts__subtitle {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+    }
+
+    .contacts__subtitle {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    
+    .list__link {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .tag {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .headOfDesign-title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .paragraphs-title {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .paragraphs-text {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .team-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}

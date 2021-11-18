@@ -33,7 +33,6 @@
   	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-image: url("../images/somesay-background-color.jpg");
-	
 }
 
 .portfolio__masks__left {
@@ -46,9 +45,15 @@
 	margin-bottom: 48px;
 }
 
-.mask__arrow {
+.portfolio__arrow {
+	transition: 1s;
 	transform: rotateZ(-90deg);
 	margin-left: 9px;
+}
+
+.mask__arrow.-active {
+	transition: 1s;
+	opacity: 0.5;
 }
 
 .portfolio__masks__right {
@@ -146,7 +151,7 @@
 		margin-right: auto;
 	}
 
-	.mask__arrow {
+	.portfolio__arrow {
 		position: absolute;
 		right: 24px;
 		top: 33px;

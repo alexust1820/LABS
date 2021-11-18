@@ -1,0 +1,96 @@
+.headOfDesign-title {
+    margin: 0 0 24px 0;
+}
+
+.headOfDesign__tags {
+    border-bottom: 1px solid var(--gray);
+    padding: 0 0 40px 0;
+    position: relative;
+    margin: 0 0 100px 0;
+}
+
+.headOfDesign__join {
+    position: absolute;
+    right: 0px;
+}
+
+.preface {
+    margin: 0 0 32px 0;
+}
+
+.preface.-margin {
+    margin: 0 0 100px 0;
+}
+
+.paragraphs {
+    margin: 0 0 100px 0;
+}
+
+.paragraphs-title {
+    margin: 0 0 40px 0;
+}
+
+.paragraphs-text {
+    position: relative;
+    margin: 0 0 24px 44px;
+}
+
+.paragraphs-text::before {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: var(--white);
+    position: absolute;
+    left: -44px;
+    top: 11px;
+}
+
+.invite {
+    margin: 0 0 260px 0;
+    position: relative;
+}
+
+.invite-text {
+    margin: 0 0 36px 0;
+}
+
+@media screen and (max-width: 950px) {
+    .headOfDesign__tags {
+        padding: 0 0 40px 0;
+        position: relative;
+        margin: 0 0 40px 0;
+    }
+
+    .headOfDesign__join {
+        display: none;
+    }
+
+    .preface {
+        margin: 0;
+    }
+
+    .preface.-margin {
+        margin: 0 0 60px 0;
+    }
+
+    .paragraphs {
+        margin: 0 0 60px 0;
+    }
+
+    .paragraphs-text {
+        margin: 0 0 20px 36px;
+    }
+
+    .paragraphs-text::before {
+        content: "";
+        left: -36px;
+    }
+
+    .invite {
+        margin: 0 0 120px 0;
+    }
+
+    .invite-text {
+        margin: 0 0 24px 0;
+    }
+}
