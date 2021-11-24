@@ -32,6 +32,10 @@ a {
     cursor: pointer;
 }
 
+.main-title {
+    margin: 0 0 264px 100px;
+}
+
 .arrow {
     background: url("../images/arrow.svg") no-repeat;
     height: 48px;
@@ -62,6 +66,9 @@ a {
 }
 
 @media screen and (max-width: 950px) {
+    .main-title {
+        margin: 0 0 120px 0;
+    }
     .arrow {
         background-size: 15px;
         width: 15px;

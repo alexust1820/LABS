@@ -1,16 +1,8 @@
-﻿.hero-title {
-    margin-left: 100px;
-}
-
-.hero__mission::before {
+﻿.hero__mission::before {
     content: "о нас";
     color: var(--gray);
     text-transform: uppercase;
     top: -30px;
-}
-
-.hero-title, .join-title {
-    margin-bottom: 297px;
 }
 
 .hero__mission {
@@ -65,19 +57,12 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .hero-title {
-        margin-left: 0px;
-    }
-
     .hero__zinger-img {
         width: 270px;
     }
 }
 
 @media screen and (max-width:950px) {
-    .hero-title {
-        margin-bottom: 120px;
-    }
     
     .hero__mission:before {
         top: -15px;

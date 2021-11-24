@@ -19,7 +19,7 @@
     font-family: "Manrope-text";
 }
 
-.hero-title, .join-title {
+.main-title {
     font-size: 248px;
     font-style: normal;
     font-weight: 400;
@@ -38,6 +38,11 @@
 
 .mission {
     font-size: 40px;
+    line-height: 52px;
+}
+
+.preview__text {
+    font-size: 36px;
     line-height: 52px;
 }
 
@@ -81,7 +86,7 @@
     font-weight: 600;
 }
 
-.masks, .cat, .vk, .experts, .team__people-link, .contacts__data, .office {
+.masks, .cat, .vk, .experts, .team__people-link, .contacts__data, .office, .column-text {
     font-size: 24px;
     font-weight: 300;
     line-height: 32px;
@@ -155,6 +160,13 @@
     line-height: 20px;
 }
 
+.advantages-title {
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110px;
+}
+
 @media screen and (max-width: 1226px) {
     .header__link {
         font-size: 60px;
@@ -168,7 +180,7 @@
         line-height: 40px;
     }
 
-    .hero-title, .join-title {
+    .main-title {
         font-size: 88px;
         font-weight: 400;
         line-height: 90px;
@@ -253,6 +265,11 @@
         font-size: 16px;
         font-weight: 300;
         line-height: 22px;
+    }
+
+    .preview__text {
+        font-size: 22px;
+        line-height: 32px;
     }
 }
 
