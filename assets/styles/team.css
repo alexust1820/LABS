@@ -117,8 +117,8 @@
 
     .team__office-img {
         margin-left: auto;
-        width: 327px;
-        height: 201px;
+        max-width: 327px;
+        max-height: 201px;
     }
 
     .team__experts-img {

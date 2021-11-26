@@ -19,27 +19,30 @@
 <body>
     <header>
         <a href="top"></a>
-        <div class="container">
-            <div class="header">
-                <button class="btn logo">
-                    <div class="logo__sf">SF</div>
-                    LABS
+        <div class="container -header">
+            <nav class="header__nav">
+                <a href="./index.html" class="header__link">О нас</a>
+                <a href="#portfolio" class="header__link">Продукты</a>
+                <a href="#team" class="header__link">Команда</a>
+                <a href="./join.html" class="header__link">Карьера</a>
+            </nav>
+            <div class="header__nav-mobile">
+                <button onclick="HeaderMenu()" id="menu-btn" class="btn header__menu-btn">
+                    <div class="header__menu-btn__top-stick"></div>
+                    <div class="header__menu-btn__bottom-stick"></div>
                 </button>
-                <button class="btn header__burger" onclick="HeaderMenu()">
-                    <div class="header__burger__middle-stick"></div>
-                </button>
-                <div class="header__menu -hidden">
-                    <div class="header__links">
-                        <a href="./index.html" class="btn header__link" onclick="HeaderMenu()">О нас</a>
-                        <a href="#portfolio" class="header__link" onclick="HeaderMenu()">Продукты</a>
-                        <a href="#team" class="header__link" onclick="HeaderMenu()">Команда</a>
-                        <a href="./join.html" class="header__link -contacts" onclick="HeaderMenu()">Карьера</a>
+                <div id="menu" class="header__menu -hidden">
+                    <div class="header__menu-nav">
+                        <a href="./index.html" class="header__link">О нас</a>
+                        <a href="#portfolio" class="header__link">Продукты</a>
+                        <a href="#team" class="header__link">Команда</a>
+                        <a href="./join.html" class="header__link">Карьера</a>
                     </div>
                     <div class="header__contacts">
-                        <p class="header__contact text">Email</p>
+                        <p class="header__contact text">E-mail</p>
                         <p class="text">Contact@sflabs.org</p>
-                        <p class="header__contact text">Location</p>
-                        <p class="text">Russia, St. Petersburg</p>
+                        <p class="header__contact -margin-top text">Адрес</p>
+                        <p class="text">Россия, Санкт-Петербург</p>
                     </div>
                 </div>
             </div>
@@ -92,7 +95,7 @@
             <h2 class="title portfolio-title">Наши продукты</h2>
             <a href="https://somesay.app" target="_blank" id="somesay" onmouseover="masksActive()" onmouseout="masksPassive()" class="portfolio__masks">
                 <div class="portfolio__masks__left">
-                    <h4 id="masks-title" class="title masks-title">somesay</h4>
+                    <h4 id="masks-title" class="title masks-title">SomeSay</h4>
                     <p class="text masks">
                         Приложение для обмена <br>
                         анонимными голосовыми <br>
@@ -166,7 +169,7 @@
             <div class="contacts__info">
                 <p class="text contacts__subtitle">E-mail</p>
                 <p class="text contacts__data">Contact@sflabs.org</p>
-                <p class="text contacts__subtitle">Location</p>
+                <p class="text contacts__subtitle">Адрес</p>
                 <div class="text contacts__data">
                     Россия, Санкт-Петербург
                     <a href="#top" class="arrow contact-arrow"></a>

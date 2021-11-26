@@ -69,14 +69,18 @@
 	margin: 20px 0;
 }
 
-.list.-biggerHeight {
-	height: 208px;
-}
-
-.list.-hidden {
+.list.-hidden, .list.-biggerHeight.-hidden {
     transition: 1s all;
 	height: 0;
     min-width: 0%;
+}
+
+.list.-biggerHeight {
+	height: 210px;
+	transition: 1s all;
+	max-width: 100%;
+	overflow: hidden;
+	margin: 20px 0;
 }
 
 .list__link {
@@ -133,9 +137,5 @@
 @media screen and (max-width: 339px) {
 	.list {
 		height: 120px;
-	}
-
-	.list.-biggerHeight {
-		height: 250px;
 	}
 }

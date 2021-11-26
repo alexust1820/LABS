@@ -1,6 +1,9 @@
 ﻿/*This file belongs to an all html documents*/
 
+const menuBtn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+
 function HeaderMenu() {
-    document.querySelector(".header__menu").classList.toggle("-hidden");
-    document.querySelector(".header__burger").classList.toggle("-active");
+    menu.classList.toggle("-hidden");
+    menuBtn.classList.toggle("-active");
 }

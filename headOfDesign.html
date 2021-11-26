@@ -17,27 +17,30 @@
 <body>
     <header>
         <a href="top"></a>
-        <div class="container">
-            <div class="header">
-                <button class="btn logo">
-                    <div class="logo__sf">SF</div>
-                    LABS
+        <div class="container -header">
+            <nav class="header__nav">
+                <a href="./index.html" class="header__link">О нас</a>
+                <a href="./index.html#portfolio" class="header__link">Продукты</a>
+                <a href="./index.html#team" class="header__link">Команда</a>
+                <a href="./join.html" class="header__link">Карьера</a>
+            </nav>
+            <div class="header__nav-mobile">
+                <button onclick="HeaderMenu()" id="menu-btn" class="btn header__menu-btn">
+                    <div class="header__menu-btn__top-stick"></div>
+                    <div class="header__menu-btn__bottom-stick"></div>
                 </button>
-                <button class="btn header__burger" onclick="HeaderMenu()">
-                    <div class="header__burger__middle-stick"></div>
-                </button>
-                <div class="header__menu -hidden">
-                    <div class="header__links">
-                        <a href="./index.html" class="btn header__link" onclick="HeaderMenu()">О нас</a>
-                        <a href="./index.html#portfolio" class="header__link" onclick="HeaderMenu()">Продукты</a>
-                        <a href="./index.html#team" class="header__link" onclick="HeaderMenu()">Команда</a>
-                        <a href="./join.html" class="header__link -contacts" onclick="HeaderMenu()">Карьера</a>
+                <div id="menu" class="header__menu -hidden">
+                    <div class="header__menu-nav">
+                        <a href="./index.html" class="header__link">О нас</a>
+                        <a href="./index.html#portfolio" class="header__link">Продукты</a>
+                        <a href="./index.html#team" class="header__link">Команда</a>
+                        <a href="./join.html" class="header__link">Карьера</a>
                     </div>
                     <div class="header__contacts">
-                        <p class="header__contact text">Email</p>
+                        <p class="header__contact text">E-mail</p>
                         <p class="text">Contact@sflabs.org</p>
-                        <p class="header__contact text">Location</p>
-                        <p class="text">Russia, St. Petersburg</p>
+                        <p class="header__contact -margin-top text">Адрес</p>
+                        <p class="text">Россия, Санкт-Петербург</p>
                     </div>
                 </div>
             </div>
@@ -50,7 +53,7 @@
                 <button class="btn tag">St. Peterburg</button>
                 <button class="btn tag">Full-time</button>
                 <button class="btn tag">Flexible</button>
-                <a href="form.html" class="join-btn headOfDesign__join">Join to team</a>
+                <a href="form.html" class="join-btn headOfDesign__join">Откликнуться</a>
             </div>
             <p class="text preface">
                 We are engaged in experimental projects with a focus on social. Our team has extensive experience <br>
@@ -61,29 +64,29 @@
                 mechanics If you like to launch new and ambitious products-perhaps this vacancy is for you!
             </p>
             <div class="paragraphs">
-                <h4 class="title paragraphs-title">You have to</h4>
+                <h4 class="title paragraphs-title">Что нужно делать</h4>
                 <p class="text paragraphs-text">design and prototype interfaces for mobile applications;</p>
                 <p class="text paragraphs-text">work with analytics and metrics;</p>
                 <p class="text paragraphs-text">interact with the product team and the development team;</p>
                 <p class="text paragraphs-text">be the initiator of the development of product hypotheses.</p>
             </div>
             <div class="paragraphs">
-                <h4 class="title paragraphs-title">It's interesting here, because</h4>
+                <h4 class="title paragraphs-title">Что мы ждем от вас</h4>
                 <p class="text paragraphs-text">design and prototype interfaces for mobile applications;</p>
                 <p class="text paragraphs-text">work with analytics and metrics;</p>
                 <p class="text paragraphs-text">interact with the product team and the development team;</p>
                 <p class="text paragraphs-text">be the initiator of the development of product hypotheses.</p>
             </div>
             <div class="paragraphs">
-                <h4 class="title paragraphs-title">We expect you to</h4>
+                <h4 class="title paragraphs-title">Что мы предлагаем</h4>
                 <p class="text paragraphs-text">design and prototype interfaces for mobile applications;</p>
                 <p class="text paragraphs-text">work with analytics and metrics;</p>
                 <p class="text paragraphs-text">interact with the product team and the development team;</p>
                 <p class="text paragraphs-text">be the initiator of the development of product hypotheses.</p>
             </div>
             <div class="invite">
-                <p class="text invite-text">If you are interested in our vacancy, send your resume with a cover letter to our email</p>
-                <a href="form.html" class="join-btn">Join our team</a>
+                <p class="text invite-text">Готовы откликнуться? Отправляйте резюме и сопроводительное письмо на нашу почту</p>
+                <a href="form.html" class="join-btn">Откликнуться</a>
             </div>
         </div>
     </section>
@@ -93,7 +96,7 @@
             <div class="contacts__info">
                 <p class="text contacts__subtitle">E-mail</p>
                 <p class="text contacts__data">Contact@sflabs.org</p>
-                <p class="text contacts__subtitle">Location</p>
+                <p class="text contacts__subtitle">Адрес</p>
                 <div class="text contacts__data">
                     Россия, Санкт-Петербург
                     <a href="#top" class="arrow contact-arrow"></a>

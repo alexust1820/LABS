@@ -2,6 +2,19 @@
     margin-bottom: 66px;
 }
 
+.logo {
+    width: 85px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__sf {
+    border: 1.5px solid var(--white);
+    padding: 7px;
+}
+
 .footer__copyright {
     display: flex;
     width: 250px;
