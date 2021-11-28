@@ -46,7 +46,7 @@
         position: absolute;
         top: 36px;
         height: calc(100vh - 74px);
-        width: calc(100vw - 24px);
+        width: calc(100vw - 48px);
         background: var(--black);
         display: flex;
         flex-direction: column;
