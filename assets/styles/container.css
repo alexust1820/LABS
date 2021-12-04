@@ -3,10 +3,6 @@
     width: 1160px;
 }
 
-.container.-header {
-    margin: 64px auto 175px auto;
-}
-
 .container.-footer {
     display: flex;
     justify-content: space-between;
@@ -31,10 +27,5 @@
 
     .container.-headlines {
         margin-bottom: 120px;
-    }
-
-    .container.-header {
-        width: calc(100% - 48px);
-        margin: 40px auto 105px auto;
     }
 }

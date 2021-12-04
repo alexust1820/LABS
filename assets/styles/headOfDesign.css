@@ -5,13 +5,7 @@
 .headOfDesign__tags {
     border-bottom: 1px solid var(--gray);
     padding: 0 0 40px 0;
-    position: relative;
     margin: 0 0 100px 0;
-}
-
-.headOfDesign__join {
-    position: absolute;
-    right: 0px;
 }
 
 .preface {

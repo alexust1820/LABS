@@ -26,23 +26,12 @@
     margin: 277px 0 0 0;
 }
 
-.column-text::before {
-    content:"";
-    width: 20px;
-    height: 1px;
-    background-color: var(--white);
-    position: absolute;
-    left: -31px;
-    top: 14px;
-}
-
 .column-text {
-    position: relative;
-    margin: 0 0 86px 31px;
+    margin: 0 0 86px 0;
 }
 
 .column-text.-noMargin {
-    margin: 0 0 0 31px;
+    margin: 0;
 }
 
 .idea {
@@ -64,9 +53,20 @@
     background-color: var(--black);
     border: none;
     border-bottom: 1px solid var(--white);
-    padding: 0 0 32px 0;
+    padding: 0 0 8px 0;
     outline: none;
     margin: 0 0 40px 0;
+    transition: 1s;
+}
+
+.idea__place-name {
+    transition: 1s;
+    height: 28px;
+}
+
+.idea__place-name.-filled {
+    color: var(--gray);
+    transition: 1s;
 }
 
 .idea__input.-margin {

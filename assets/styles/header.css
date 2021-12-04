@@ -1,3 +1,7 @@
+header {
+    margin: 64px 0 175px 0;
+}
+
 .header__nav {
     display: flex;
     justify-content: flex-end;
@@ -31,6 +35,12 @@
 }
 
 @media screen and (max-width: 950px) {
+
+    header {
+        width: calc(100% - 48px);
+        margin: 37px 0 118px 0;
+    }
+
     .header__nav {
         display: none;
     }
@@ -44,14 +54,14 @@
 
     .header__menu {
         position: absolute;
-        top: 36px;
-        height: calc(100vh - 74px);
-        width: calc(100vw - 48px);
+        top: 15px;
+        height: calc(100vh - 45px);
+        width: calc(100vw - 24px);
         background: var(--black);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 0 0 36px 0;
+        padding: 0 0 40px 0;
         z-index: 10;
     }
 
@@ -82,10 +92,6 @@
         bottom: 0px;
         left: 0px;
         transition: 1s;
-    }
-
-    .header__menu-btn.-active {
-        margin: 0 0 0 auto;
     }
 
     .header__menu-btn.-active > .header__menu-btn__top-stick {

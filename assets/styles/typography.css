@@ -18,6 +18,8 @@
 
 .title {
     font-family: "Manrope";
+    font-weight: 600;
+    font-style: normal;
 }
 
 .text {
@@ -27,7 +29,6 @@
 .main-title {
     font-size: 248px;
     font-style: normal;
-    font-weight: 400;
     line-height: 248px;
 }
 
@@ -58,7 +59,6 @@
 
 .portfolio-title, .team-title, .contacts-title, .idea-title {
     font-size: 100px;
-    font-weight: 400;
     line-height: 110px;
 }
 
@@ -136,7 +136,6 @@
 .headOfDesign-title {
     font-size: 80px;
     font-style: normal;
-    font-weight: 400;
     line-height: 80px;
 }
 
@@ -172,10 +171,16 @@
     line-height: 110px;
 }
 
-.idea__input {
+.idea__input, .idea__place-name {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 32px;
+}
+
+.idea__place-name.-filled {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .idea-text {
@@ -188,7 +193,6 @@
 
     .main-title {
         font-size: 88px;
-        font-weight: 400;
         line-height: 90px;
     }
 
