@@ -14,14 +14,6 @@
 
 .contacts__data {
     margin-bottom: 21px;
-    position: relative;
-}
-
-.contact-arrow {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    transform: rotate(180deg);
 }
 
 @media screen and (max-width: 950px) {
